@@ -12,4 +12,4 @@
     };
 }(jQuery));
 
-jQuery('[data-role="blink"]').blink();
+jQuery('[data-igefa-widget="blink"]').blink();

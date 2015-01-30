@@ -9,7 +9,7 @@ describe("blink plugin", function() {
     });
 
     it("sets the blink attribute", function() {
-        var fixture = $('<div class="blink" data-role="blink">Blink!</div>');
+        var fixture = $('<div data-igefa-widget="blink">Blink!</div>');
         $(fixture).blink();
 
         expect(fixture).toHaveClass("blink");
