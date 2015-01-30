@@ -15,4 +15,4 @@
     };
 }(jQuery));
 
-// $("*[data-igefa-widget=list]").list();
+$("*[data-igefa-widget=list]").list();
