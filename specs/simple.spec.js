@@ -14,4 +14,11 @@ describe("blink plugin", function() {
 
         expect(fixture).toHaveClass("blink");
     });
+
+    it("sets a custom blink attribute", function() {
+        var fixture = $('<div data-igefa-widget="blink">Blink!</div>');
+        $(fixture).blink({class: "blunk"});
+
+        expect(fixture).toHaveClass("blunk");
+    });
 });
