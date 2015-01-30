@@ -1,0 +1,19 @@
+{
+  "name": "Playground",
+  "version": "0.0.1",
+  "authors": [
+    "Kore Nordmann <mail@kore-nordmann.de>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "karma": "~0.4.3"
+  }
+}
