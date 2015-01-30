@@ -15,5 +15,6 @@
     <!--
         Enable used modules
     -->
+    <import file="${basedir}/ant/modules/npm.xml" />
     <import file="${basedir}/ant/modules/bower.xml" />
 </project>
