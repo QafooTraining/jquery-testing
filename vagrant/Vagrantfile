@@ -1,0 +1,20 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    config.vm.hostname = "igefa.local"
+
+    config.vm.provider :virtualbox do |vb|
+        config.vm.box      = "opensuse-13.1-64"
+        config.vm.box_url  = "http://downloads.sourceforge.net/project/opensusevagrant/13.1/opensuse-13.1-64.box?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fopensusevagrant%2Ffiles%2F13.1%2F&ts=1422870598&use_mirror=skylink"
+
+        vb.name = "igefa Development"
+
+        # Properly configure the vm to use the available amount of cores
+        vb.customize ["modifyvm", :id, "--ioapic", "on"]
+        vb.customize ["modifyvm", :id, "--memory", 1024]
+        vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+    end
+
+    config.vm.synced_folder "../", "/home/vagrant/playground"
+end
