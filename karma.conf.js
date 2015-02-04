@@ -85,7 +85,6 @@ module.exports = function (config) {
         // Those are installed using npm (package.json)
         plugins: [
             'karma-jasmine',
-            'karma-jasmine-jquery',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-phantomjs-launcher',
